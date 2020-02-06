@@ -142,6 +142,7 @@ export class TextInputAutocompleteDirective implements OnDestroy {
   onBlur() {
     if (this.menu) {
       this.menu.lastCaretPosition = this.elm.nativeElement.selectionStart;
+      this.hideMenu();
     }
   }
 
