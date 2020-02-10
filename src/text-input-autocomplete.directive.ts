@@ -40,6 +40,11 @@ export class TextInputAutocompleteDirective implements OnDestroy {
   @Input() searchRegexp = /^\w*$/;
 
   /**
+   * The flag determining wheter close the menu on lost focus (blur); 
+   */
+  @Input() closeMenuOnBlur = false;
+
+  /**
    * The menu component to show with available options.
    * You can extend the built in `TextInputAutocompleteMenuComponent` component to use a custom template
    */
@@ -69,11 +74,6 @@ export class TextInputAutocompleteDirective implements OnDestroy {
    * A function that formats the selected choice once selected.
    */
   @Input() getChoiceLabel: (choice: any) => string = choice => choice;
-
-  /**
-   * The flag determining wheter close the menu on lost focus (blur); 
-   */
-  @Input() closeMenuOnBlur = false;
 
   /* tslint:disable member-ordering */
   private menu:
