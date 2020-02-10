@@ -40,7 +40,7 @@ export class TextInputAutocompleteDirective implements OnDestroy {
   @Input() searchRegexp = /^\w*$/;
 
   /**
-   * The flag determining wheter close the menu on lost focus (blur); 
+   * Whether to close the menu when the host textarea loses focus
    */
   @Input() closeMenuOnBlur = false;
 
