@@ -31,7 +31,8 @@
     },
     "whitelistedNonPeerDependencies": [
       "tslib",
-      "textarea-caret"
+      "textarea-caret",
+      "to-px"
     ]
   },
   "config": {
